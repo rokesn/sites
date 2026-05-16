@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="밤포탈 문의하기 - 궁금한 점이 있으시면 문의해 주세요.">
+    <meta name="robots" content="noindex, nofollow">
+    <title>문의하기 - 밤포탈</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-page {
+            padding: 140px 0 80px;
+            min-height: 100vh;
+        }
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .contact-content h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .contact-intro {
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+        .contact-card {
+            background: var(--card-bg);
+            padding: 32px;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            text-align: center;
+            transition: all var(--transition-normal);
+        }
+        .contact-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-4px);
+        }
+        .contact-card i {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .contact-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .contact-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        .contact-card a {
+            color: var(--primary-light);
+            font-weight: 600;
+        }
+        .contact-card a:hover {
+            color: var(--text-primary);
+        }
+        .contact-form-wrapper {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+        }
+        .contact-form-wrapper h2 {
+            font-size: 1.4rem;
+            margin-bottom: 24px;
+            color: var(--text-primary);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 14px 16px;
+            background: var(--darker-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            color: var(--text-primary);
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all var(--transition-fast);
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+        }
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-play-circle"></i>
+                <span>밤포탈</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#features">특징</a></li>
+                <li><a href="index.html#categories">카테고리</a></li>
+                <li><a href="index.html#benefits">장점</a></li>
+                <li><a href="index.html#access">접속하기</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <div class="container">
+            <div class="contact-content">
+                <h1>문의하기</h1>
+                <p class="contact-intro">궁금한 점이나 도움이 필요하시면 언제든지 문의해 주세요.<br>빠른 시일 내에 답변 드리겠습니다.</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <i class="fab fa-telegram"></i>
+                        <h3>텔레그램</h3>
+                        <p>공식 채널을 통해<br>최신 소식을 확인하세요</p>
+                        <a href="https://t.me/bampt_notice" target="_blank" rel="noopener">@bampt_notice</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fab fa-twitter"></i>
+                        <h3>트위터</h3>
+                        <p>공식 트위터에서<br>업데이트를 확인하세요</p>
+                        <a href="https://twitter.com/bamportal" target="_blank" rel="noopener">@bamportal</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fab fa-instagram"></i>
+                        <h3>인스타그램</h3>
+                        <p>공식 인스타그램을<br>팔로우하세요</p>
+                        <a href="https://www.instagram.com/bamportal" target="_blank" rel="noopener">@bamportal</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h2>이메일 문의</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="category">문의 유형</label>
+                            <select id="category" name="category" required>
+                                <option value="">선택해 주세요</option>
+                                <option value="general">일반 문의</option>
+                                <option value="technical">기술 지원</option>
+                                <option value="dmca">저작권 관련</option>
+                                <option value="partnership">제휴 문의</option>
+                                <option value="other">기타</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">이메일</label>
+                            <input type="email" id="email" name="email" placeholder="답변 받을 이메일 주소" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">제목</label>
+                            <input type="text" id="subject" name="subject" placeholder="문의 제목" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">내용</label>
+                            <textarea id="message" name="message" placeholder="문의 내용을 자세히 적어주세요" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <i class="fas fa-paper-plane"></i> 문의하기
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+                <p>&copy; 2024 밤포탈. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('문의가 접수되었습니다. 빠른 시일 내에 답변 드리겠습니다.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

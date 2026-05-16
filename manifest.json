@@ -1,0 +1,33 @@
+{
+    "name": "밤포탈 - 대한민국 1위 영상 스트리밍",
+    "short_name": "밤포탈",
+    "description": "대한민국 최대 영상 스트리밍 플랫폼. 100만+ 사용자가 선택한 밤포탈.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#070714",
+    "theme_color": "#6366f1",
+    "lang": "ko",
+    "dir": "ltr",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/favicon.ico",
+            "sizes": "32x32",
+            "type": "image/x-icon"
+        }
+    ],
+    "categories": ["entertainment", "video"],
+    "screenshots": [
+        {
+            "src": "/og-image.jpg",
+            "sizes": "1200x630",
+            "type": "image/jpeg"
+        }
+    ]
+}

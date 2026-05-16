@@ -1,0 +1,22 @@
+# robots.txt for 밤포탈
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://밤포탈.여기여.site/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Allow search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Naverbot
+Allow: /
+
+User-agent: Yeti
+Allow: /
